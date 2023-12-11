@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Chewy Checkers",
+      "live": "https://valenium.github.io/SEI-project1/",
+      "git": "https://github.com/valenium/SEI-project1",
+      "image": "http://www.imgur.com/pictureofproject.png"
+    },
+    {
+      "name": "Tender",
+      "live": "https://tender-f3bf64ad9858.herokuapp.com/",
+      "git": "https://github.com/valenium/Tinder-But-For-Restaurants",
+      "image": "http://www.imgur.com/pictureofproject.png"
+    }
+  ]
+  
