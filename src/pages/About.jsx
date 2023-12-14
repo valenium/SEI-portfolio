@@ -12,10 +12,16 @@ function About(props) {
     useEffect(() => { getAboutData() }, [])
 
     const loaded = () => (
-        <div>
-            <h2>{about.name}</h2>
-            <h3>{about.email}</h3>
-            <p>{about.bio}</p>
+        <div className="about-grid">
+            <div>
+                <h1 className="text-pink-200 font-bebas text-6xl">{about.name}</h1>
+                <h3 className="text-white font-oxygen text-xl">{about.email}</h3>
+            </div>
+
+            <div>
+                <h3 className="text-white font-oxygen text-xl">{about.bio}</h3>
+            </div>
+
         </div>
     )
 

@@ -1,0 +1,24 @@
+#root {
+  height: 100%;
+  width: 100%
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 4rem 0 0 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: 20rem 15rem;
+  grid-template-rows: 10rem 20rem;
+  margin: auto;
+}
