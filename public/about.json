@@ -1,6 +1,23 @@
 {
     "name": "Valerie Lim",
-    "email": "valerieamberlim@gmail.com",
-    "headshot": "http://www.imgur.com/pictureofproject.png",
-    "bio": "Full Stack Developer and award winning Product Manager with a track record of building teams and overseeing product lifecycles in the gaming and cybersecurity industries"
+    "bio": "Full Stack Developer and award winning Product Manager with a track record of building teams and overseeing product lifecycles in the gaming and cybersecurity industries",
+    "hobbies": [
+      {
+        "icon": "https://api.iconify.design/ri/cake-3-line.svg?color=pink&width=40",
+        "hobby": "Baking"
+      },
+      {
+        "icon": "https://api.iconify.design/ph/game-controller.svg?color=pink&width=40",
+        "hobby": "Gaming"
+      },
+      {
+        "icon": "https://api.iconify.design/solar/chef-hat-broken.svg?color=pink&width=40",
+        "hobby": "Cooking"
+      },
+      {
+        "icon": "https://api.iconify.design/ion/fitness-outline.svg?color=pink&width=40",
+        "hobby": "Fitness"
+      }
+    ],
+    "resume": "/src/assets/resume.pdf"
   }
