@@ -19,5 +19,5 @@
         "hobby": "Fitness"
       }
     ],
-    "resume": "/src/assets/resume.pdf"
+    "resume": "/public/resume.pdf"
   }

@@ -3,14 +3,14 @@
       "name": "Chewy Checkers",
       "live": "https://valenium.github.io/SEI-project1/",
       "git": "https://github.com/valenium/SEI-project1",
-      "image": "/src/assets/chewycheckers.png",
+      "image": "/public/chewycheckers.png",
       "description": "Dog themed checkers complemented with unenthusiastic commentary"
     },
     {
       "name": "Tender",
       "live": "https://tender-f3bf64ad9858.herokuapp.com/",
       "git": "https://github.com/valenium/Tinder-But-For-Restaurants",
-      "image": "/src/assets/tender.png",
+      "image": "/public/tender.png",
       "description": "Like Tinder, but for restaurants - find your next meal"
     }
   ]
