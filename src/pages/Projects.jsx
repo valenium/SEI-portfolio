@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Projects.css";
 
 function Projects(props) {
     const [projects, setProjects] = useState(null)
