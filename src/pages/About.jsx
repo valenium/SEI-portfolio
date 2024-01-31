@@ -15,7 +15,7 @@ function About(props) {
     const loaded = () => (
         <div className="about px-20 py-6">
             <div>
-                <h1 className="text-pink-200 font-bebas text-6xl">{about.name}</h1>
+                <h1 className="text-pink-200 font-bebas text-6xl">About Me</h1>
                 <h3 className="text-white font-oxygen text-xl">{about.bio}</h3>
             </div>
 
