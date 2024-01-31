@@ -1,3 +1,5 @@
+import "./Experience.css";
+
 function Experience(props) {
     return (
     <div className="experience-page">

@@ -4,9 +4,9 @@
 }
 
 .App {
-  /* display: grid;
+  display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 90% 10%; */
+  /* grid-template-rows: 90% 10%; */
   padding: 2rem 0 0 4rem;
   height: 100vh;
   width: 100vw;
@@ -20,51 +20,12 @@ nav {
   height: 40vh;
 }
 
-.home-page {
-  display: grid;
-  grid-template-columns: 20rem 15rem;
-  grid-template-rows: 8rem 22rem;
-  margin: auto;
-  padding-bottom: 4rem;
-}
-
 footer {
   display: flex;
   justify-content: space-around;
 }
 
-.projects {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem;
-  height: 70vh;
-  width: 70vw
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1rem;
-  width: 27vw
-}
-
-.project-img {
-  width: 24rem;
-  height: 15rem;
-  object-fit: cover;
-  align-self: auto;
-}
-
 .buttons {
   display: flex;
   justify-content: space-between;
-}
-
-.about{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 80vh;
-  width: 70vw;
 }
