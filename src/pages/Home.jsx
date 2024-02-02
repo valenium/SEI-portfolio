@@ -6,6 +6,7 @@ function Home(props) {
     <div className="home-page">
         <div className="col-span-2">
             <h1 className="text-pink-200 font-bebas text-9xl text-center">Valerie Lim</h1>
+            <h2>Full Stack Developer & Product Manager</h2>
         </div>
         <div>
             <img src="/public/me.png" alt="Animated photo of Valerie"/>
