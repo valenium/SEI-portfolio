@@ -1,7 +1,7 @@
 .home-page {
     display: grid;
     grid-template-columns: 20rem 15rem;
-    grid-template-rows: 8rem 22rem;
+    grid-template-rows: 11rem 22rem;
     margin: auto;
     padding-bottom: 4rem;
     justify-content: center;

@@ -1,3 +1,9 @@
+:root {
+  --accent-text-over: #ffffff; /* Example color */
+  --accent-regular: rgb(172, 119, 182); /* Example color */
+  --text-md: 1rem; /* Example font size */
+}
+
 #root {
   height: 100%;
   width: 100%
@@ -33,3 +39,5 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+/* styles.css */
