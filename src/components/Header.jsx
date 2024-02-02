@@ -1,25 +1,26 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import { Routes, Route } from 'react-router-dom';
 
-function Header(props) {
+function Header() {
 
     return (
       <header className="nav">
         <nav>
 
             <div className="text-white font-bebas text-3xl hover:text-pink-200 hover:font-extrabold">
-              <Link to="/">HOME</Link>
+              <a href="#home-section">HOME</a>
             </div>
 
             <div className="text-white font-bebas text-3xl hover:text-pink-200 hover:font-extrabold">
-              <Link to="/about">ABOUT</Link>
+              <a href="#about-section">ABOUT</a>
             </div>
 
             <div className="text-white font-bebas text-3xl hover:text-pink-200 hover:font-extrabold">
-              <Link to="/experience">EXPERIENCE</Link>
+              <a href="#projects-section">PROJECTS</a>
             </div>
 
             <div className="text-white font-bebas text-3xl hover:text-pink-200 hover:font-extrabold">
-              <Link to="/projects">PROJECTS</Link>
+              <a href="#experience-section">EXPERIENCE</a>
             </div>
 
             <div className="nav-icons">

@@ -9,6 +9,10 @@
   width: 100%
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   display: grid;
   grid-template-columns: 15% 85%;

@@ -17,10 +17,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Home />
-        <About />
-        <Projects />
-        <Experience />
+        <div id="home-section"><Home /></div>
+        <div id="about-section" ><About /></div>
+        <div id="projects-section"><Projects /></div>
+        <div id="experience-section"><Experience /></div>
       </main>
       <Routes>
         {/* <Route exact path="/" element={<Home />} />
