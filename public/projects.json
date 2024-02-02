@@ -1,17 +1,23 @@
 [
-    {
-      "name": "Chewy Checkers",
-      "live": "https://valenium.github.io/SEI-project1/",
-      "git": "https://github.com/valenium/SEI-project1",
-      "image": "/public/chewycheckers.png",
-      "description": "Dog themed checkers complemented with unenthusiastic commentary"
-    },
-    {
-      "name": "Tender",
-      "live": "https://tender-f3bf64ad9858.herokuapp.com/",
-      "git": "https://github.com/valenium/Tinder-But-For-Restaurants",
-      "image": "/public/tender.png",
-      "description": "Like Tinder, but for restaurants - find your next meal"
-    }
-  ]
-  
+  {
+    "name": "Meal Planner",
+    "live": "https://mealplanner-deploy-69aff832caa7.herokuapp.com/",
+    "git": "https://github.com/valenium/Meal_Planner",
+    "image": "/public/calendar-recipe.png",
+    "description": "Plan meals with the rest of your household with an interactive meal calendar."
+  },
+  {
+    "name": "Tender",
+    "live": "https://tender-f3bf64ad9858.herokuapp.com/",
+    "git": "https://github.com/valenium/Tinder-But-For-Restaurants",
+    "image": "/public/tender.png",
+    "description": "Like Tinder, but for restaurants - find your next meal"
+  },
+  {
+    "name": "Chewy Checkers",
+    "live": "https://valenium.github.io/SEI-project1/",
+    "git": "https://github.com/valenium/SEI-project1",
+    "image": "/public/chewycheckers.png",
+    "description": "Dog themed checkers complemented with unenthusiastic commentary"
+  }
+]

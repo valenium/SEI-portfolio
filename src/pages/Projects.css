@@ -1,0 +1,24 @@
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+    width: 70vw
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 27vw;
+    height: 72vh;
+    margin-bottom: 1rem;
+  }
+  
+  .project-img {
+    width: 24rem;
+    height: 15rem;
+    object-fit: cover;
+    align-self: auto;
+  }
