@@ -1,7 +1,22 @@
 :root {
-  --accent-text-over: #ffffff; /* Example color */
-  --accent-regular: rgb(172, 119, 182); /* Example color */
-  --text-md: 1rem; /* Example font size */
+  --accent-text-over: #ffffff;
+  --text-md: 1rem;
+
+  --accent-light: pink;
+  --accent-regular: rgb(172, 119, 182);
+	--accent-dark: #494458;
+
+  /* Gradients */
+	--gradient-stop-1: var(--accent-light);
+	--gradient-stop-2: var(--accent-regular);
+	--gradient-stop-3: var(--accent-dark);
+	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 150%);
+	--gradient-accent: linear-gradient(
+		150deg,
+		var(--gradient-stop-1),
+		var(--gradient-stop-2),
+		var(--gradient-stop-3)
+	);
 }
 
 #root {
@@ -17,7 +32,7 @@ html {
   display: grid;
   grid-template-columns: 15% 85%;
   /* grid-template-rows: 90% 10%; */
-  padding: 2rem 0 0 4rem;
+  padding: 2rem 0 0 2rem;
   width: 100vw;
 }
 
