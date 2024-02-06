@@ -97,6 +97,8 @@ function Home(props) {
               </span>
             </div>
           </div>
+          </section>
+      
 
           <section className="box skills">
             <div className="stack">
@@ -243,8 +245,7 @@ function Home(props) {
             </div>
           </section>
           
-        </section>
-      </div>
+          </div>
     </section>
   );
 }

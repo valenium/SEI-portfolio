@@ -2,9 +2,9 @@
   --accent-text-over: #ffffff;
   --text-md: 1rem;
 
-  --accent-light: pink;
-  --accent-regular: rgb(172, 119, 182);
-	--accent-dark: #494458;
+  --accent-regular: pink;
+  --accent-dark: rgb(172, 119, 182);
+	--accent-light: white;
 
   /* Gradients */
 	--gradient-stop-1: var(--accent-light);
@@ -59,4 +59,7 @@ footer {
   justify-content: space-between;
 }
 
-/* styles.css */
+.stack {
+	display: flex;
+	flex-direction: column;
+}
