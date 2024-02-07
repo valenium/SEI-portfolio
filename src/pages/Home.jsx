@@ -43,7 +43,7 @@ function Home(props) {
                 size="2.5rem"
                 gradient
               />
-              <h2>Languages</h2>
+              <h2 className="font-oxygen">Languages</h2>
             </div>
 
             <div className="icons">
@@ -98,40 +98,6 @@ function Home(props) {
             </div>
           </div>
           </section>
-      
-
-          <section className="box skills">
-            <div className="stack">
-              <div className="skill-header">
-                <Icon
-                  icon="data"
-                  color="var(--accent-regular)"
-                  size="2.5rem"
-                  gradient
-                />
-                <h2>Databases</h2>
-              </div>
-
-              <div className="icons">
-                <span>
-                  <Icon
-                    icon="postgresql"
-                    color="var(--accent-regular)"
-                    size="8rem"
-                    gradient
-                  />
-                </span>
-                <span>
-                  <Icon
-                    icon="mongo"
-                    color="var(--accent-regular)"
-                    size="8rem"
-                    gradient
-                  />
-                </span>
-              </div>
-            </div>
-          </section>
 
           <section className="box skills">
             <div className="stack">
@@ -142,7 +108,7 @@ function Home(props) {
                   size="2.5rem"
                   gradient
                 />
-                <h2>Frameworks</h2>
+                <h2 className="font-oxygen">Frameworks</h2>
               </div>
               <div className="icons">
                 <span>
@@ -214,7 +180,7 @@ function Home(props) {
                   size="2.5rem"
                   gradient
                 />
-                <h2>CRM and Agile</h2>
+                <h2 className="font-oxygen">CRM and Agile</h2>
               </div>
               <div className="icons">
                 <span>
@@ -244,7 +210,40 @@ function Home(props) {
               </div>
             </div>
           </section>
-          
+
+          <section className="box skills">
+            <div className="stack">
+              <div className="skill-header">
+                <Icon
+                  icon="data"
+                  color="var(--accent-regular)"
+                  size="2.5rem"
+                  gradient
+                />
+                <h2 className="font-oxygen">Databases</h2>
+              </div>
+
+              <div className="icons">
+                <span>
+                  <Icon
+                    icon="postgresql"
+                    color="var(--accent-regular)"
+                    size="8rem"
+                    gradient
+                  />
+                </span>
+                <span>
+                  <Icon
+                    icon="mongo"
+                    color="var(--accent-regular)"
+                    size="8rem"
+                    gradient
+                  />
+                </span>
+              </div>
+            </div>
+          </section>
+
           </div>
     </section>
   );
