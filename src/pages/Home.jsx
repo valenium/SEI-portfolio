@@ -33,7 +33,7 @@ function Home(props) {
         </div>
       </div>
 
-      <div className="skills-flex">
+      <div className="skills-flex mb-16">
         <section className="box skills">
           <div className="stack">
             <div className="skill-header">
@@ -43,7 +43,7 @@ function Home(props) {
                 size="2.5rem"
                 gradient
               />
-              <h2 className="font-oxygen">Languages</h2>
+              <h2 className="font-oxygen font-semibold">Languages</h2>
             </div>
 
             <div className="icons">
@@ -108,7 +108,7 @@ function Home(props) {
                   size="2.5rem"
                   gradient
                 />
-                <h2 className="font-oxygen">Frameworks</h2>
+                <h2 className="font-oxygen font-semibold">Frameworks</h2>
               </div>
               <div className="icons">
                 <span>
@@ -180,7 +180,7 @@ function Home(props) {
                   size="2.5rem"
                   gradient
                 />
-                <h2 className="font-oxygen">CRM and Agile</h2>
+                <h2 className="font-oxygen font-semibold">CRM and Agile</h2>
               </div>
               <div className="icons">
                 <span>
@@ -220,7 +220,7 @@ function Home(props) {
                   size="2.5rem"
                   gradient
                 />
-                <h2 className="font-oxygen">Databases</h2>
+                <h2 className="font-oxygen font-semibold">Databases</h2>
               </div>
 
               <div className="icons">

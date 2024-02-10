@@ -39,7 +39,7 @@ html {
 nav {
   display: flex;
   position: fixed;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   height: 100vh;
   padding: 2rem 0 0 2rem;
@@ -63,4 +63,8 @@ footer {
 .stack {
 	display: flex;
 	flex-direction: column;
+}
+
+.projects-section {
+  align-items: center;
 }

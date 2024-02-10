@@ -3,7 +3,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 2rem;
-    width: 70vw
+    width: 70vw;
+    margin: auto;
   }
   
   .project {
@@ -17,8 +18,8 @@
   }
   
   .project-img {
-    width: 24rem;
-    height: 15rem;
+    width: 420px;
+    height: 240px;
     object-fit: cover;
     align-self: auto;
   }

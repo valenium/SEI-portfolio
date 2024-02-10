@@ -15,11 +15,11 @@ function About(props) {
   }, []);
 
   const loaded = () => (
-    <div className="about">
-      <h1 className="text-pink-200 font-bebas text-6xl text-center">
+    <div className="about mb-12">
+      <h1 className="text-pink-200 font-bebas text-6xl text-center mb-4">
         About Me
       </h1>
-      <div className="about-text">
+      <div className="about-text font-oxygen text-sm">
         <p>
           I am a <strong>Full-Stack Software Engineer</strong> with a diverse
           background in{" "}
