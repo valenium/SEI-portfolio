@@ -59,3 +59,32 @@ a svg {
 .social:focus {
   color: var(--accent-text-over);
 }
+
+button.icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav {
+    height: 0;
+  }
+
+  nav {
+    background-color: rgb(85, 63, 85);
+    width: 100vw;
+    padding: 10px 8px 0 0;
+  }
+
+  button.icon {
+    display: contents;
+    color: var(--accent-dark)
+  }
+
+  button.icon:hover {
+    color: white;
+  }
+}

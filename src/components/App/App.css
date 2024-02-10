@@ -68,3 +68,16 @@ footer {
 .projects-section {
   align-items: center;
 }
+
+@media (max-width: 50em) {
+  .App{
+    grid-template-columns: none;
+    grid-template-rows: 8% 92%;
+  }
+
+  nav {
+    height: 8vh;
+    flex-direction: row;
+  }
+
+}

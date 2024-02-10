@@ -1,9 +1,15 @@
-import { HashLink as Link } from "react-router-hash-link";
-import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
 import Icon from "./Icons";
 import "./Header.css";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+      setIsOpen(!isOpen);
+  };
+
   const iconLinks = [
     {
       label: "LinkedIn",
@@ -37,7 +43,20 @@ function Header() {
           <div className="text-white font-oxygen text-xl hover:text-pink-200 mt-4">
             <a href="#experience-section">EXPERIENCE</a>
           </div>
+
         </div>
+
+        <button className="icon" onClick={toggleMenu}>
+                &#9776; {/* This is a simple text representation of a hamburger icon */}
+            </button>
+            {isOpen && (
+                <div className="mobile-menu">
+                    <a href="#home-section" onClick={toggleMenu}>HOME</a>
+                    <a href="#about-section" onClick={toggleMenu}>ABOUT</a>
+                    <a href="#projects-section" onClick={toggleMenu}>PROJECTS</a>
+                    <a href="#experience-section" onClick={toggleMenu}>EXPERIENCE</a>
+                </div>
+            )}
 
         <div className="menu-footer">
           

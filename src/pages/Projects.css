@@ -23,3 +23,15 @@
     object-fit: cover;
     align-self: auto;
   }
+
+@media (max-width: 50em) {
+  .projects {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project {
+    width: 90vw;
+  }
+}
