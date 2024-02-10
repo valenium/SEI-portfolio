@@ -12,6 +12,29 @@
   height: 60vh;
 }
 
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: pink;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .socials {
   display: flex;
   flex-wrap: wrap;

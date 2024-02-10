@@ -15,26 +15,26 @@ function Header() {
       href: "https://github.com/valenium",
       icon: "github-logo",
     },
-    { label: "Email", href: "valerieamberlim@gmail.com", icon: "mail" },
+    { label: "Email", href: "mailto:valerieamberlim@gmail.com", icon: "mail" },
   ];
 
   return (
     <header className="nav">
       <nav>
         <div className="nav-links">
-          <div className="text-white font-oxygen text-xl hover:text-pink-200 hover:font-extrabold mt-4">
+          <div className="text-white font-oxygen text-xl hover:text-pink-200 mt-4">
             <a href="#home-section">HOME</a>
           </div>
 
-          <div className="text-white font-oxygen text-xl hover:text-pink-200 hover:font-extrabold mt-4">
+          <div className="text-white font-oxygen text-xl hover:text-pink-200 mt-4">
             <a href="#about-section">ABOUT</a>
           </div>
 
-          <div className="text-white font-oxygen text-xl hover:text-pink-200 hover:font-extrabold mt-4">
+          <div className="text-white font-oxygen text-xl hover:text-pink-200 mt-4">
             <a href="#projects-section">PROJECTS</a>
           </div>
 
-          <div className="text-white font-oxygen text-xl hover:text-pink-200 hover:font-extrabold mt-4">
+          <div className="text-white font-oxygen text-xl hover:text-pink-200 mt-4">
             <a href="#experience-section">EXPERIENCE</a>
           </div>
         </div>
