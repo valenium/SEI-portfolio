@@ -55,6 +55,10 @@
   width: max-content;
 }
 
+.scroller-text {
+  text-shadow: 1px 1px 10px white;
+}
+
 @media (max-width: 50em) {
   .box {
     border-radius: 1.5rem;
