@@ -32,8 +32,8 @@ html {
   display: grid;
   grid-template-columns: 15% 85%;
   /* grid-template-rows: 90% 10%; */
-  padding: 2rem 0 0 2rem;
   width: 100vw;
+  max-width: 100%;
 }
 
 nav {
@@ -41,7 +41,8 @@ nav {
   position: fixed;
   justify-content: space-around;
   flex-direction: column;
-  height: 95vh;
+  height: 100vh;
+  padding: 2rem 0 0 2rem;
 }
 
 .nav-icons {

@@ -14,7 +14,7 @@ function Home(props) {
 
   return (
     <section>
-      <div className="home-page">
+      <div className="home-page pt-8">
         <div className="col-span-2">
           <h1 className="text-pink-200 font-bebas text-9xl text-center">
             Valerie Lim
