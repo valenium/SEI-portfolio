@@ -26,7 +26,7 @@
   transition: color var(--theme-transition);
 }
 
-a    svg {
+a svg {
     height: 2rem;
     width: 2rem;
 }
