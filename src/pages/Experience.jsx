@@ -15,7 +15,7 @@ function Experience(props) {
     const loaded = () => {
         return experience.map((exp, idx) => (
             <div key={idx} className="experience">
-                <h1 className="text-white font-bebas text-4xl drop-shadow-xl pb-4 pt-4">{exp.title}</h1>
+                <h1 className="text-white font-bebas text-4xl pb-4 pt-4">{exp.title}</h1>
                 <h2 className="text-white font-bebas text-2xl pb-2">{exp.company}</h2>                
                 <img src={exp.logo} alt='{exp.company} Logo' />
             </div>

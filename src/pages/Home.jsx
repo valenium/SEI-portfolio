@@ -28,12 +28,12 @@ function Home(props) {
           <img src="/me.png" alt="Animated photo of Valerie" />
         </div>
 
-        <div className="flex justify-center flex-col pr-10">
+        <div className="scroller flex justify-center flex-col pr-10">
           <Scroller texts={roles} />
         </div>
       </div>
 
-      <div className="skills-flex mb-16">
+      <div className="skills-flex mb-28">
         <section className="box skills">
           <div className="stack">
             <div className="skill-header">

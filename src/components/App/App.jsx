@@ -19,7 +19,7 @@ function App() {
       <main>
         <div id="home-section"><Home /></div>
         <div id="about-section" className="mt-4"><About /></div>
-        <div id="projects-section"><Projects /></div>
+        <div id="projects-section" className="mb-28"><Projects /></div>
         <div id="experience-section"><Experience /></div>
       </main>
       <Routes>
