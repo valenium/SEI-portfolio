@@ -4,13 +4,29 @@
 }
 
 .experience {
-    width: 20vw
+    width: 25vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience > img {
+    border-radius: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
     
     .experience-flex {
         flex-direction: column;
+    }
+
+    .experience {
+        width: 100%;
+        margin-bottom: 2rem;
     }
     
 }

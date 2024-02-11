@@ -15,7 +15,7 @@ function About(props) {
   }, []);
 
   const loaded = () => (
-    <div className="about mb-12">
+    <div className="about mb-20">
       <h1 className="text-pink-200 font-bebas text-6xl text-center mb-4">
         About Me
       </h1>

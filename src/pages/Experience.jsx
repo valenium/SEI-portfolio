@@ -15,21 +15,16 @@ function Experience(props) {
     const loaded = () => {
         return experience.map((exp, idx) => (
             <div key={idx} className="experience">
-                <h1 className="text-white font-bebas text-4xl drop-shadow-xl">{exp.title} | {exp.company}</h1>
-                <h2 className="text-white font-bebas text-2xl">{exp.date}</h2>                
-                <p>{exp.description}</p>
-                <ul>
-                    {exp.responsibilities.map((resp, rIdx) => (
-                        <li key={rIdx}>{resp}</li>
-                    ))}
-                </ul>
+                <h1 className="text-white font-bebas text-4xl drop-shadow-xl pb-4 pt-4">{exp.title}</h1>
+                <h2 className="text-white font-bebas text-2xl pb-2">{exp.company}</h2>                
+                <img src={exp.logo} alt='{exp.company} Logo' />
             </div>
             ))
         }
 
     return (
         <div className="experience-page">
-            <h1 className="text-pink-200 font-bebas text-6xl text-center pb-8">Experience</h1>
+            <h1 className="text-pink-200 font-bebas text-6xl text-center pb-12">Experience</h1>
             <div className="experience-flex">
                 {experience ? loaded(): <h1>Loading...</h1>}
             </div>
