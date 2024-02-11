@@ -12,3 +12,11 @@
   text-justify: inter-word;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  
+  .about-text{
+    width: 100%;
+  }
+  
+}

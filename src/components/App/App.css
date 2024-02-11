@@ -71,8 +71,8 @@ footer {
 
 @media (max-width: 50em) {
   .App{
-    grid-template-columns: none;
-    grid-template-rows: 8% 92%;
+    display: flex;
+    max-width: 100%;
   }
 
   nav {

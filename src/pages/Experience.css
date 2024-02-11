@@ -1,0 +1,16 @@
+.experience-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience {
+    width: 20vw
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .experience-flex {
+        flex-direction: column;
+    }
+    
+}

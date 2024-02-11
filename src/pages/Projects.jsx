@@ -40,7 +40,7 @@ function Projects(props) {
         ))
     }
 
-    return projects ? <div className="projects">{loaded()}</div> : <h1>Loading...</h1>
+    return projects ? <div className="projects pb-12">{loaded()}</div> : <h1>Loading...</h1>
 }
   
   export default Projects;

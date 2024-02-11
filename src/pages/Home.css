@@ -63,6 +63,7 @@
   .home-page {
     display: flex;
     flex-direction: column;
+    padding-top: 72px;
   }
 
   .box {

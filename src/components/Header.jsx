@@ -46,15 +46,15 @@ function Header() {
 
         </div>
 
-        <button className="icon" onClick={toggleMenu}>
-                &#9776; {/* This is a simple text representation of a hamburger icon */}
+        <button className="icon pl-4" onClick={toggleMenu}>
+                &#9776;
             </button>
             {isOpen && (
                 <div className="mobile-menu">
-                    <a href="#home-section" onClick={toggleMenu}>HOME</a>
-                    <a href="#about-section" onClick={toggleMenu}>ABOUT</a>
-                    <a href="#projects-section" onClick={toggleMenu}>PROJECTS</a>
-                    <a href="#experience-section" onClick={toggleMenu}>EXPERIENCE</a>
+                    <a href="#home-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">HOME</a>
+                    <a href="#about-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">ABOUT</a>
+                    <a href="#projects-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">PROJECTS</a>
+                    <a href="#experience-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">EXPERIENCE</a>
                 </div>
             )}
 

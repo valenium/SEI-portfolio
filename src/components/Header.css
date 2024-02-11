@@ -64,7 +64,11 @@ button.icon {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 50em) {
   .nav-links {
     display: none;
   }
@@ -76,12 +80,23 @@ button.icon {
   nav {
     background-color: rgb(85, 63, 85);
     width: 100vw;
-    padding: 10px 8px 0 0;
+    padding: 10px 8px 0 8px;
   }
 
   button.icon {
     display: contents;
-    color: var(--accent-dark)
+    color: var(--accent-dark);
+    font-size: x-large;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px 8px 8px;
+    margin-top: 30px;
+    background-color: rgb(85, 63, 85);
+    border-radius: 1rem;
   }
 
   button.icon:hover {
