@@ -25,7 +25,7 @@ function Home(props) {
         </div>
 
         <div>
-          <img src="/me.png" alt="Animated photo of Valerie" />
+          <img src="/src/assets/me.png" alt="Animated photo of Valerie" />
         </div>
 
         <div className="flex justify-center flex-col pr-10">
