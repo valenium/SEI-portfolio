@@ -11,3 +11,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+@media screen {
+  body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+  }
+}
