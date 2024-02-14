@@ -23,7 +23,7 @@ function Experience(props) {
         }
 
     return (
-        <div className="experience-page">
+        <div className="experience-page mb-32">
             <h1 className="text-pink-200 font-bebas text-6xl text-center pb-12">Experience</h1>
             <div className="experience-flex">
                 {experience ? loaded(): <h1>Loading...</h1>}

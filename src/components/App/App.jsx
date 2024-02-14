@@ -10,6 +10,7 @@ import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Projects from "../../pages/Projects";
 import Experience from "../../pages/Experience";
+import ContactForm from "../../pages/ContactForm";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <div id="about-section" className="mt-4"><About /></div>
         <div id="projects-section" className="mb-28"><Projects /></div>
         <div id="experience-section"><Experience /></div>
+        <div id="contact-section"><ContactForm /></div>
       </main>
       <Routes>
         {/* <Route exact path="/" element={<Home />} />
