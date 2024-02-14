@@ -1,56 +1,105 @@
 import "./ContactForm.css";
 import { useState } from "react";
 
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/dd0fab20-cb5e-11ee-bb69-515451de93af";
+
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      message: ''
-    });
-  
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData(prevState => ({
-        ...prevState,
-        [name]: value
-      }));
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log('Form data:', formData);
-      // Here you would typically send the data to a server or email service
-    };
-  
-    return (
-      <div className="contact-form">
-        <h1 className="text-pink-200 font-bebas text-6xl text-center">Contact</h1>
-        <p>Feel free to reach out to me about anything or just to say hi!</p>
-        <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Name" 
-            value={formData.name} 
-            onChange={handleChange} 
-          />
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Email" 
-            value={formData.email} 
-            onChange={handleChange} 
-          />
-          <textarea 
-            name="message" 
-            placeholder="Message" 
-            value={formData.message} 
-            onChange={handleChange} 
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    );
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const inputs = e.target.elements;
+    const data = {};
+
+    for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].name) {
+        data[inputs[i].name] = inputs[i].value;
+      }
+    }
+
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Form response was not ok");
+        }
+
+        setSubmitted(true);
+      })
+      .catch((err) => {
+        // Submit the form manually
+        e.target.submit();
+      });
   };
-  
-  export default ContactForm;
+
+  const submitForm = () => {
+    return (
+    <>
+      <div className="text-2xl font-oxygen text-white text-center">Thank you!</div>
+      <div className="text-md font-oxygen text-white text-center">
+        I'll be in touch soon.
+      </div>
+    </>
+    )
+  };
+
+  const form = () => {
+    return (
+    <div className="form-flex">
+      <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
+        <div className="pt-0 mb-3">
+          <input
+            type="text"
+            placeholder="Your name"
+            name="name"
+            className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
+            required
+          />
+        </div>
+        <div className="pt-0 mb-3">
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
+            required
+          />
+        </div>
+        <div className="pt-0 mb-3">
+          <textarea
+            placeholder="Your message"
+            name="message"
+            className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
+            required
+          />
+        </div>
+        <div className="pt-0 mb-3">
+          <button
+            className="active:bg-transparent hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-pink-950 rounded shadow outline-none"
+            type="submit"
+          >
+            Send a message
+          </button>
+        </div>
+      </form>
+    </div>
+    )
+  };
+
+  return (
+    <div className="flex flex-col items-center">
+      <h1 className="text-pink-200 font-bebas text-6xl text-center pb-4">Contact Me</h1>
+      <p className="font-oxygen text-white text-center pb-8">Send me a message if you're interested in collaborating, or just want to say hi</p>
+      {submitted ? submitForm() : form()}
+    </div>
+  );
+};
+
+export default ContactForm;
