@@ -43,7 +43,7 @@ const ContactForm = () => {
     return (
     <>
       <div className="text-2xl font-oxygen text-white text-center">Thank you!</div>
-      <div className="text-md font-oxygen text-white text-center">
+      <div className="text-md font-oxygen text-white text-center font-semibold">
         I'll be in touch soon.
       </div>
     </>
@@ -94,7 +94,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mb-24">
       <h1 className="text-pink-200 font-bebas text-6xl text-center pb-4">Contact Me</h1>
       <p className="font-oxygen text-white text-center pb-8">Send me a message if you're interested in collaborating, or just want to say hi</p>
       {submitted ? submitForm() : form()}

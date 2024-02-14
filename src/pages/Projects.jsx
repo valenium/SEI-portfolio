@@ -42,7 +42,7 @@ function Projects(props) {
 
     return (
         <>
-            <h1 className="text-pink-200 font-bebas text-6xl text-center pb-8">Projects</h1>
+            <h1 className="text-pink-200 font-bebas text-6xl text-center pb-8 pt-4">Projects</h1>
             <div className="projects pb-12">
                 {projects ? loaded() : <h1>Loading...</h1>}
             </div>
