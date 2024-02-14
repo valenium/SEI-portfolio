@@ -44,6 +44,10 @@ function Header() {
             <a href="#experience-section">EXPERIENCE</a>
           </div>
 
+          <div className="text-white font-oxygen text-xl hover:text-pink-200 mt-4">
+            <a href="#contact-section">CONTACT</a>
+          </div>
+
         </div>
 
         <button className="icon pl-4" onClick={toggleMenu}>
@@ -55,6 +59,7 @@ function Header() {
                     <a href="#about-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">ABOUT</a>
                     <a href="#projects-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">PROJECTS</a>
                     <a href="#experience-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">EXPERIENCE</a>
+                    <a href="#contact-section" onClick={toggleMenu} className="text-white font-oxygen text-m hover:text-pink-200 mt-4">CONTACT</a>
                 </div>
             )}
 
