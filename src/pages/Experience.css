@@ -1,6 +1,7 @@
 .experience-flex {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .experience {
@@ -12,6 +13,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 1rem
 }
 
 .experience > img {
@@ -25,7 +27,6 @@
     }
 
     .experience {
-        width: 80vw;
         margin: auto;
         margin-bottom: 2rem;
     }

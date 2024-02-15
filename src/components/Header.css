@@ -68,7 +68,7 @@ button.icon {
   display: none;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 820px) {
   .nav-links {
     display: none;
   }
