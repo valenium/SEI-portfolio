@@ -38,7 +38,7 @@ function About(props) {
           I've had the opportunity to lead the development of features on FC 24
           such as the main menu redesign and closed beta, where I organized and
           collaborated with large multidiscplinary and cross-functional teams
-          throughout the organization. My experience spans to helping build a
+          throughout the organization. My experience includes building a
           team from the ground up at an early stage cybersecurity startup, where
           I had a strong influence on product design, customer success, and
           operational processes.{" "}
